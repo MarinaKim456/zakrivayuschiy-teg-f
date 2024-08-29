@@ -1,0 +1,17 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'Press Start 2P', sans-serif;
+    --bg-color: #fff;
+    --accent-color: #000;
+    --gradient-vertical-start: #d3d3d3;
+    --gradient-horizontal-start: #e7e7e7;
+    --gradient-horizontal-end: #1a1a1a;
+    --gradient-percent: 0.01%;
+    --heart-color: red;
+    --sparks-color: var(--heart-color);
+    --heart-contour-color:var(--accent-color);
+    --heart-main-body-color: var(--accent-color);
+
+}

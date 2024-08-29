@@ -1,0 +1,463 @@
+/* Здесь вы напишете основную часть стилей страницы.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+
+*/
+
+.page {
+  display: block;
+  background-color: var(--bg-color);
+  background-attachment: fixed;
+  font-family: var(--accent-font), 'Press Start 2P', sans-serif;
+  /* margin-inline-end: auto;
+  margin-inline-start: auto; */
+  margin: 0 auto;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  color: var(--accent-color);
+}
+
+.bg-gradient {
+  background-image: repeating-linear-gradient(var(--gradient-vertical-start), transparent 2px),
+                    repeating-linear-gradient(to left, var(--gradient-vertical-start), transparent 2px),
+                    repeating-linear-gradient(to top, var(--gradient-horizontal-start) var(--gradient-percent), var(--gradient-horizontal-end) 2px);
+  background-size: cover;
+}
+
+.header {
+  height: 575px;
+  display: grid;
+  align-items: center;
+}
+
+.header-content {
+  padding-block-start: 120px;
+  height: 323px;
+  display: grid;
+  width: 100%;
+  background-color: var(--bg-color);
+  border: 2px solid #000;
+  justify-content: center;
+  /* font-family: var(--accent-font), 'Press Start 2P', sans-serif; */
+}
+
+.logo-group {
+  margin-block-end: 10px;
+}
+
+.logo {
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 49px;
+  font-weight: 400;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  margin-block-end: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 14px;  
+  text-transform: uppercase;
+}
+
+.theme-menu__list {
+  display: grid;
+  gap: 14px;
+  justify-content: center;  
+}
+
+.theme-menu__button:active,
+.theme-menu__button:focus-visible,
+.theme-menu__button:disabled {
+    opacity: 0.6;  
+}
+
+.theme-menu__button:disabled {
+    pointer-events: none;
+}
+
+.theme-menu__button {  
+  position: relative;
+  background-color: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  font-size: 14px;
+  text-transform: uppercase;  
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.theme-menu__button:focus {
+  border: none;
+  outline: none;
+}
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+  animation: 0.5s;
+}
+
+.theme-menu__button::after {
+  width: 0;
+  /* transform: scaleX(0); */
+  transition: 0.3s ;  
+}
+
+.theme-menu__button:focus-visible:after {
+  width: 100%;
+  /* transform: scaleX(1); */
+}
+
+.theme-menu__button[type="button"]:checked + .theme-menu__item,
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  opacity: 0.6;
+  position: absolute;
+  left: -16px;
+  transform: translateX(4px);
+  animation: moving-arrow ease-in-out 0.5s infinite alternate;
+}
+
+/* @keyframes focus-animation {
+
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
+  }
+} */
+
+@keyframes moving-arrow {
+
+  from {  
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(4px);
+  }
+}
+
+.main {
+  font-family: var(--main-font);
+}
+
+.card,
+.save-button-container {  
+  background-color: var(--bg-color);
+  /* height: 100vh; */
+  border: 2px solid var(--accent-color);
+  font-size: 18px;
+  /* filter: brightness(200%); */
+  /* filter: contrast(20%); */
+  /* filter: blur(3.2rem); */
+  /* filter: opacity(0.8); */
+  /* filter: grayscale(0.8); */
+  /* filter: saturate(158%); */
+  /* filter: hue-rotate(-90deg); */
+  /* filter: sepia(80%); */
+  /* filter: invert(0.7); */
+}
+
+.card:not(last-of-type) {
+  margin-block-end: 52px;
+}
+
+.card-title {
+  font-size: 18px;
+  padding-inline-start: 10px;
+}
+
+.img-box {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  margin: auto 0;
+}
+
+.img-box::before {
+  content: "</html>";
+  position: absolute;
+  font-family: var(--accent-font), 'Press Start 2P', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  mix-blend-mode:hard-light;
+  top: 25px;
+  right: 13px;
+  -webkit-text-stroke: 1px #fff;
+  opacity: 0.4;
+}
+
+/* @supports */
+/* text-shadow */
+
+.card-image {
+  height: 100%;
+  width: 100%;
+}
+
+.text-box {
+  display: grid;
+  gap:27px;
+  padding-block-start: 25px;
+  padding-inline-start: 25px;
+  padding-inline-end: 25px;
+  margin-block-end: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: end;
+}
+
+.card__icon-button {
+  display: block;
+  background-color: var(--bg-color);  
+  border: none;
+  height: 36px;
+  width: 36px;
+}
+
+.card__icon-button:focus {
+  border: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--accent-color);
+}
+
+.heart {
+  fill: transparent;
+}
+
+.core{
+  transition: fill 0.3s cubic-bezier(0.6, 0.1, 0.15, 0.8);
+}
+/* //////////////////////////////////// */
+
+.heart:not(:hover) .core {
+  /* transition-duration: 0.3s; */
+  transition-delay: 0.03s;
+  fill: transparent;
+}
+
+.heart:hover .core {  
+  fill: var(--accent-color);
+  transition: fill 0.3s;
+}
+
+.main-body {
+  fill: transparent;
+  transition-property: fill;
+  transition-duration: 0.3s;
+} 
+
+.heart:hover .main-body {
+  fill: var(--accent-color);
+  transition-delay: 0.05s;
+}
+/* ////////////////////////////////////////// */
+
+.heart:active .core {
+  fill: var(--heart-color);
+}
+
+.heart:active .main-body {
+  fill: var(--heart-color);
+  /* transition-delay: 0.06s; */
+}
+/* //////////////////////////////////////// */
+
+/* .like-icon.is-liked .heart{
+  animation: scale-heart 0.3s ease-in 0.01s;
+} */
+
+.like-icon.is-liked .core {
+  transition-duration: 0.3s;
+  fill: var(--heart-color);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-color);
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.06s alternate;
+}
+
+@keyframes zooming {
+
+ 0% {
+  transform: scale(1);
+ }
+
+ 100% {
+  transform: scale(1.5);
+ }
+}
+
+.like-icon.is-liked .heart {
+  animation: zooming 0.3s ease-in 0.1s;
+  will-change: transform;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon.is-liked .sparks {
+  animation: blink 0.3s ease-in 0.3s alternate;
+  /* will-change: opacity; */
+}
+
+@keyframes blink  {
+
+  from{
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.card__like-button {
+  min-width: 130px;
+  height: 38px;
+  margin-block-end: 25px;
+  margin-inline-end: 27px;
+  text-transform: capitalize;
+}
+
+.card__like-button,
+.save-button {  
+  border: 1px solid var(--accent-color);
+  font-family: var(--accent-font);
+  color: var(--bg-color);
+  background-color: inherit;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.save-button span,
+.card__like-button span{
+  position: relative;
+  z-index: 2;
+}
+
+.save-button:after,
+.card__like-button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--accent-color);
+  transition: 1.5s ease-in-out;
+}
+
+.save-button:hover:after,
+.card__like-button:hover:after{
+  width: 100%;
+}
+
+.save-button:hover span,
+.card__like-button:hover span {
+  mix-blend-mode: difference;
+}
+
+.save-button:not(:hover) span,
+.card__like-button:not(:hover) span {
+  mix-blend-mode: difference;
+}
+
+/* @keyframes mix-color {
+
+  0% {
+    color: var(--accent-color);
+  }
+
+  50% {
+    color: #00660A;
+  }
+
+  100% {
+    color: var(--bg-color);
+  }
+} */
+
+.save-button:focus,
+.card__like-button:focus {
+  border-color: transparent;
+  outline: none;
+}
+
+.save-button:focus-visible,
+.card__like-button:focus-visible {
+  border: 1px solid var(--accent-color);
+  box-shadow: 2px 2px  var(--accent-color);
+  /* transform: translateY(-2px) translateX(-2px); */
+}
+
+.save-button {
+  width: 306px;
+  height: 84px;  
+}
+
+.dialog-window {
+  width: 341px;
+  height: 191px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.submit-button {
+  width: 257px;
+  height: 38px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* @media (width <= 375px){}; */
