@@ -6,75 +6,125 @@
 */
 
 :root.theme-light {
-    --main-font: 'Inter', sans-serif;
-    --accent-font: 'Press Start 2P', sans-serif;
-    --bg-color: #fff;
-    --accent-color: #000;
-    --gradient-vertical-start: #d3d3d3;
-    --gradient-horizontal-start: #e7e7e7;
-    --gradient-horizontal-end: #1a1a1a;
-    --gradient-percent: 0.01%;
-    --heart-color: red;
-    --sparks-color: var(--heart-color);
-    --heart-contour-color:var(--accent-color);
-    --heart-main-body-color: var(--accent-color);
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'Press Start 2P', sans-serif;
+  --font-weight-regular: 400;
+  --word-spacing: 5px;
+  --font-size-desktop: 14px;
+  --margin-block-end-desktop: 51px;
+  --btn-margin-block-end-desktop: 24px;
+  --padding-inline-end-mobile: 29px;
+  --bg-color: #fff;
+  --bg-gradient: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0 2px,
+    rgb(211 211 211 / 0) 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom, 
+    #e7e7e7 0 2px,
+    #1a1a1a 2px 4px);
+  --accent-color: #000;
+  --heart-color: red;
+  --sparks-color: var(--heart-color);
+  --heart-contour-color: var(--accent-color);
+  --heart-main-body-color: var(--accent-color);
+  --hover-button-text: var(--bg-color);
+  --floppy-color: var(--bg-color);
 }
 
 :root.theme-dark {
-    --main-font: 'Inter-Variable', sans-serif;
-    --accent-font: 'Press Start 2P', sans-serif;
-    --bg-color: #000;
-    --accent-color: #00CC14;
-    --gradient-vertical-start: #000;
-    --gradient-horizontal-start: #007f0c;
-    --gradient-horizontal-end: #004306;
-    --gradient-percent: 0;
-    --heart-color: red;
-    --sparks-color: var(--heart-color);
-    --heart-contour-color:var(--accent-color);
-    --heart-main-body-color: var(--accent-color);
+  --main-font: 'Inter-Variable', sans-serif;
+  --accent-font: 'Press Start 2P', sans-serif;
+  --font-weight-regular: 465;
+  --word-spacing: 0.5px;
+  --font-size-desktop: 18px;
+  --btn-margin-block-end-desktop: 23px;
+  --margin-block-end-desktop: 47px;
+  --padding-inline-end-mobile: 25px;
+  --bg-color: #000;
+  --bg-gradient: repeating-linear-gradient(
+    to right,
+    #000 0 2px,
+    rgb(0 0 0 / 0) 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom, 
+    #007f0c 0 2px,
+    #004306 2px 4px);
+  --accent-color: #00cc14;
+  --heart-color: red;
+  --sparks-color: var(--heart-color);
+  --heart-contour-color: var(--accent-color);
+  --heart-main-body-color: var(--accent-color);
+  --hover-button-text: var(--accent-color);
+  --floppy-color: var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
 
-    :root {
-        --main-font: 'Inter', sans-serif;
-        --accent-font: 'Press Start 2P', sans-serif;
-        --bg-color: #fff;
-        --accent-color: #000;
-        --gradient-vertical-start: #d3d3d3;
-        --gradient-horizontal-start: #e7e7e7;
-        --gradient-horizontal-end: #1a1a1a;
-        --gradient-percent: 0.01%;
-        --heart-color: red;
-        --sparks-color: var(--heart-color);
-        --heart-contour-color:var(--accent-color);
-        --heart-main-body-color: var(--accent-color);
-    }
+  :root {
+      --main-font: 'Inter', sans-serif;
+      --accent-font: 'Press Start 2P', sans-serif;
+      --font-weight-regular: 400;
+      --word-spacing: 5px;
+      --font-size-desktop: 14px;
+      --margin-block-end-desktop: 51px;
+      --btn-margin-block-end-desktop: 24px;
+      --padding-inline-end-mobile: 29px;
+      --bg-color: #fff;
+      --bg-gradient: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0 2px,
+        rgb(211 211 211 / 0) 2px 4px
+      ),
+      repeating-linear-gradient(
+        to bottom, 
+        #e7e7e7 0 2px,
+        #1a1a1a 2px 4px);
+      --accent-color: #000;  
+      --heart-color: red;
+      --sparks-color: var(--heart-color);
+      --heart-contour-color: var(--accent-color);
+      --heart-main-body-color: var(--accent-color);
+      --hover-button-text: var(--bg-color);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    
-    :root {
-        --main-font: 'Inter-Variable', sans-serif;
-        --accent-font: 'Press Start 2P', sans-serif;
-        --bg-color: #000;
-        --accent-color: #00CC14;
-        --gradient-vertical-start: #000;
-        --gradient-horizontal-start: #007f0c;
-        --gradient-horizontal-end: #004306;
-        --gradient-percent: 0;
-        --heart-color: red;
-        --sparks-color: var(--heart-color);
-        --heart-contour-color:var(--accent-color);
-        --heart-main-body-color: var(--accent-color);
-    }
+
+  :root {
+    --main-font: 'Inter-Variable', sans-serif;
+  --accent-font: 'Press Start 2P', sans-serif;
+  --font-weight-regular: 465;
+  --word-spacing: 0.5px;
+  --font-size-desktop: 18px;
+  --margin-block-end-desktop: 47px;
+  --btn-margin-block-end-desktop: 23px;
+  --padding-inline-end-mobile: 25px;
+  --bg-color: #000;
+  --bg-gradient: repeating-linear-gradient(
+    to right,
+    #000 0 2px,
+    rgb(0 0 0 / 0) 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom, 
+    #007f0c 0 2px,
+    #004306 2px 4px);
+  --accent-color: #00cc14;
+  --heart-color: red;
+  --sparks-color: var(--heart-color);
+  --heart-contour-color: var(--accent-color);
+  --heart-main-body-color: var(--accent-color);
+  --hover-button-text: var(--accent-color);
+  }
 }
 
 .page.theme-light {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .page.theme-dark {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }

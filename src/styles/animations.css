@@ -12,3 +12,25 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes zooming {
+
+  0% {
+    transform: scale(1)
+  }
+
+  100% {
+    transform: scale(1.5)
+  }
+  }
+
+@keyframes blinks {
+
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
