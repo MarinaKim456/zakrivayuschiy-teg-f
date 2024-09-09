@@ -6,8 +6,9 @@
   --font-weight-regular: 400;
   --word-spacing: 5px;
   --font-size-desktop: 14px;
-  --margin-block-end-desktop: 51px;
+  --margin-block-end-desktop: 52px;
   --btn-margin-block-end-desktop: 24px;
+  --margin-block-end-mobile: 50px;
   --padding-inline-end-mobile: 29px;
   --bg-color: #fff;
   --bg-gradient: repeating-linear-gradient(
