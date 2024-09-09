@@ -3,7 +3,7 @@
 :root {
   --main-font: 'Inter-Variable', sans-serif;
   --accent-font: 'Press Start 2P', sans-serif;
-  --font-weight-regular: 400; 
+  --font-weight-regular: 400;
   --word-spacing: 5px;
   --font-size-desktop: 14px;
   --margin-block-end-desktop: 51px;
@@ -11,19 +11,16 @@
   --padding-inline-end-mobile: 29px;
   --bg-color: #fff;
   --bg-gradient: repeating-linear-gradient(
-    to right,
-    #d3d3d3 0 2px,
-    rgb(211 211 211 / 0) 2px 4px
-  ),
-  repeating-linear-gradient(
-    to bottom, 
-    #e7e7e7 0 2px,
-    #1a1a1a 2px 4px);
+      to right,
+      #d3d3d3 0 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #e7e7e7 0 2px, #1a1a1a 2px 4px);
   --accent-color: #000;
   --heart-color: red;
   --sparks-color: var(--heart-color);
   --heart-contour-color: var(--accent-color);
   --heart-main-body-color: var(--accent-color);
   --hover-button-text: var(--bg-color);
-  --floppy-color:var(--bg-color);
+  --floppy-color: var(--bg-color);
 }
