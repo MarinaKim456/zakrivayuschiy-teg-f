@@ -55,7 +55,7 @@
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: 400;
   color: var(--accent-color);
-  text-transform: uppercase;  
+  text-transform: uppercase;
   margin-block-end: 18px;
 }
 
@@ -117,7 +117,7 @@
   bottom: 0;
   height: 2px;
   background: var(--accent-color);
-  width: 0;  
+  width: 0;
   transition: 0.3s;
 }
 
@@ -217,28 +217,27 @@
 }
 
 .card-image-prep {
-  filter: brightness(90%);  
+  filter: brightness(90%);
 }
 
 .img-first-sprint-start {
-  filter: contrast(80%);  
+  filter: contrast(80%);
 }
 
 .img-first-sprint-end {
-  filter: blur(1px);  
+  filter: blur(1px);
 }
 
 .img-second-sprint-start {
-  filter: opacity(1);  
+  filter: opacity(1);
 }
 
 .img-second-sprint-end {
-  filter: grayscale(0.2);  
+  filter: grayscale(0.2);
 }
 
 .img-third-sprint-start {
-  filter: hue-rotate(10deg);
-   
+  filter: hue-rotate(10deg);   
 }
 
 .img-third-sprint-end {
@@ -246,7 +245,7 @@
 }
 
 .img-current-sprint {
-  filter: sepia(20%); 
+  filter: sepia(20%);
 }
 
 .text-box {

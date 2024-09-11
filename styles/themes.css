@@ -55,7 +55,7 @@
       rgb(0 0 0 / 0) 2px 4px
     ),
     repeating-linear-gradient(to bottom, #000 0 2px, #004306 2px 4px),
-    linear-gradient(#007f0c, #004306);    
+    linear-gradient(#007f0c, #004306);
   --accent-color: #00cc14;
   --heart-color: red;
   --sparks-color: var(--heart-color);
@@ -119,7 +119,7 @@
         rgb(0 0 0 / 0) 2px 4px
       ),
       repeating-linear-gradient(to bottom, #000 0 2px, #004306 2px 4px),
-      linear-gradient(#007f0c, #004306); 
+      linear-gradient(#007f0c, #004306);
     --accent-color: #00cc14;
     --heart-color: red;
     --sparks-color: var(--heart-color);
