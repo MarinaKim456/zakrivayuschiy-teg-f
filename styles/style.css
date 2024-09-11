@@ -33,8 +33,8 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   max-inline-size: 700px;
-  color: var(--accent-color);
-  
+  color: var(--accent-color); 
+  font-variation-settings: "wght" var(--font-weight-regular);
 }
 
 .header {
@@ -237,7 +237,7 @@
 }
 
 .img-third-sprint-start {
-  filter: hue-rotate(10deg);   
+  filter: hue-rotate(10deg);
 }
 
 .img-third-sprint-end {
