@@ -1,47 +1,45 @@
 /* stylelint-disable function-url-quotes */
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
 
-@font-face {
-  font-display: swap;
-  font-family: 'Inter-Variable';
-  src:
-    local('Inter.woff2'),
-    url('../fonts/Inter-Variable.woff2') format('woff2 supports variations'),
-    url('../fonts/Inter-Variable.woff2') format('woff2-variations');
-  font-weight: 465 785;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&family=Press+Start+2P&display=swap');
 
-@supports (font-variation-settings: normal) {
-  body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-display: swap;
     font-family: 'Inter-Variable';
+    src:
+      local('Inter.woff2'),
+      url('../fonts/Inter-Variable.woff2') format('woff2 supports variations'),
+      url('../fonts/Inter-Variable.woff2') format('woff2-variations');
+    font-weight: 400 785;
+  }
+  
+  @supports (font-variation-settings: normal) {
+  
+    body {
+      font-family: 'Inter-Variable';
+      font-weight: 400 785;
+    }
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    src:
+      local('Inter.woff2'),
+      url('../fonts/Inter.woff2') format('woff2');
     font-weight: 465 785;
   }
-}
 
-/*Отсутствуют шрифты: `Inter, PressStart2P`.
-  
-  -e 5. При подключении вариативного шрифта не указаны форматы: `woff2 supports variations, woff2-variations`.
-  
-  -e 6. Вариативному шрифту не заданы при импорте (в файле fonts.css) все начертания. Укажите начертания: `400, 785`.
-  
-  -e 7. Отсутствуют настройки вариативных шрифтов. Укажите свойство `font-variation-settings`.
-
-} */
-
-@font-face {
-  font-display: swap;
-  font-family: 'PressStart2P';
-  src:
-    local('PressStart2P'),
-    url('../fonts/PressStart2P-Regular.woff') format('woff');
-  font-weight: 400;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'PressStart2P';
-  src:
-    local('Press Start 2P-Bold'),
-    url('../fonts/PressStart2P.woff') format('woff');
-  font-weight: 700;
-}
+  @font-face {
+    font-display: swap;
+    font-family: 'Press Start 2P';
+    src:
+      local('Press Start 2P'),
+      url('../fonts/PressStart2P-Regular.woff') format('woff'),
+      url('../fonts/PressStart2P-Regular.woff2') format('woff2');
+    font-weight: 400;
+  }

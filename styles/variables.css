@@ -2,14 +2,17 @@
 
 :root {
     --main-font: 'Inter', sans-serif;
-    --accent-font: 'Press Start 2P', sans-serif;
+    --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
     --font-weight-regular: 400;
-    --word-spacing: 5px;
+    --word-spacing: 2px;
+    --word-spacing-desktop: 5px;
     --font-size-desktop: 14px;
-    --margin-block-end-desktop: 52px;
+    --margin-block-end-desktop: 54px;
+    --card-title-margin-top-bottom-desktop: 5px;
     --btn-margin-block-end-desktop: 24px;
-    --margin-block-end-mobile: 50px;
-    --padding-inline-end-mobile: 17px;
+    --margin-block-end-mobile: 43px;
+    --padding-inline-end-mobile: 48px;
+    --card-gap-mobile: 50px;
     --bg-color: #fff;
     --bg-gradient: repeating-linear-gradient(
         to right,
@@ -24,5 +27,6 @@
     --heart-main-body-color: var(--accent-color);
     --hover-button-text: var(--bg-color);
     --floppy-color: var(--bg-color);
+    --wght: 465;
   }
   

@@ -7,14 +7,18 @@
 
 :root.theme-light {
   --main-font: 'Inter', sans-serif;
-  --accent-font: 'Press Start 2P', sans-serif;
+  --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
   --font-weight-regular: 400;
-  --word-spacing: 5px;
+  --word-spacing: 2px;
+  --word-spacing-desktop: 5px;
   --font-size-desktop: 14px;
-  --margin-block-end-desktop: 52px;
+  --line-height: 21px;
+  --margin-block-end-desktop: 54px;
+  --card-title-margin-top-bottom-desktop: 5px;
   --btn-margin-block-end-desktop: 24px;
-  --padding-inline-end-mobile: 17px;
-  --margin-block-end-mobile: 50px;
+  --padding-inline-end-mobile: 43px;
+  --margin-block-end-mobile: 48px;
+  --card-gap-mobile: 50px;
   --bg-color: #fff;
   --bg-gradient: repeating-linear-gradient(
       to right,
@@ -33,21 +37,25 @@
 
 :root.theme-dark {
   --main-font: 'Inter-Variable', sans-serif;
-  --accent-font: 'Press Start 2P', sans-serif;
+  --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
   --font-weight-regular: 465;
+  --font-weight-bold: 785;
   --word-spacing: 0.5px;
   --font-size-desktop: 18px;
-  --btn-margin-block-end-desktop: 23px;
-  --margin-block-end-desktop: 54px;
+  --btn-margin-block-end-desktop: 25px;
+  --margin-block-end-desktop: 50px;
+  --card-title-margin-top-bottom-desktop: 7px;
   --padding-inline-end-mobile: 25px;
   --margin-block-end-mobile: 51px;
+  --card-gap-mobile: 51px;
   --bg-color: #000;
   --bg-gradient: repeating-linear-gradient(
       to right,
       #000 0 2px,
       rgb(0 0 0 / 0) 2px 4px
     ),
-    repeating-linear-gradient(to bottom, #007f0c 0 2px, #004306 2px 4px);
+    repeating-linear-gradient(to bottom, #000 0 2px, #004306 2px 4px),
+    linear-gradient(#007f0c, #004306);    
   --accent-color: #00cc14;
   --heart-color: red;
   --sparks-color: var(--heart-color);
@@ -61,14 +69,18 @@
 
   :root {
     --main-font: 'Inter', sans-serif;
-    --accent-font: 'Press Start 2P', sans-serif;
+    --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
     --font-weight-regular: 400;
-    --word-spacing: 5px;
+    --word-spacing: 2px;
+    --word-spacing-desktop: 5px;
+    --line-height: 21px;
     --font-size-desktop: 14px;
-    --margin-block-end-desktop: 52px;
+    --margin-block-end-desktop: 54px;
+    --card-title-margin-top-bottom-desktop: 5px;
     --btn-margin-block-end-desktop: 24px;
-    --padding-inline-end-mobile: 17px;
-    --margin-block-end-mobile: 50px;
+    --padding-inline-end-mobile: 43px;
+    --margin-block-end-mobile: 48px;
+    --card-gap-mobile: 50px;
     --bg-color: #fff;
     --bg-gradient: repeating-linear-gradient(
         to right,
@@ -89,21 +101,25 @@
 
   :root {
     --main-font: 'Inter-Variable', sans-serif;
-    --accent-font: 'Press Start 2P', sans-serif;
+    --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
     --font-weight-regular: 465;
+    --font-weight-bold: 785;
     --word-spacing: 0.5px;
     --font-size-desktop: 18px;
-    --margin-block-end-desktop: 54px;
-    --btn-margin-block-end-desktop: 23px;
+    --margin-block-end-desktop: 50px;
+    --card-title-margin-top-bottom-desktop: 7px;
+    --btn-margin-block-end-desktop: 25px;
     --padding-inline-end-mobile: 25px;
     --margin-block-end-mobile: 51px;
+    --card-gap-mobile: 51px;
     --bg-color: #000;
     --bg-gradient: repeating-linear-gradient(
         to right,
         #000 0 2px,
         rgb(0 0 0 / 0) 2px 4px
       ),
-      repeating-linear-gradient(to bottom, #007f0c 0 2px, #004306 2px 4px);
+      repeating-linear-gradient(to bottom, #000 0 2px, #004306 2px 4px),
+      linear-gradient(#007f0c, #004306); 
     --accent-color: #00cc14;
     --heart-color: red;
     --sparks-color: var(--heart-color);
