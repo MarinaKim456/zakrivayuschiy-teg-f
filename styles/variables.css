@@ -7,19 +7,20 @@
     --word-spacing: 2px;
     --word-spacing-desktop: 5px;
     --font-size-desktop: 14px;
-    --margin-block-end-desktop: 54px;
-    --card-title-margin-top-bottom-desktop: 5px;
-    --btn-margin-block-end-desktop: 24px;
+    --margin-block-end-desktop: 50px;
+    --card-title-margin-top-bottom-desktop: 3px;
+    --btn-margin-block-end-desktop: 23px;
     --margin-block-end-mobile: 43px;
     --padding-inline-end-mobile: 48px;
     --card-gap-mobile: 50px;
     --bg-color: #fff;
-    --bg-gradient: repeating-linear-gradient(
-        to right,
-        #d3d3d3 0 2px,
-        rgb(211 211 211 / 0) 2px 4px
-      ),
-      repeating-linear-gradient(to bottom, #e7e7e7 0 2px, #1a1a1a 2px 4px);
+    --bg-gradient:
+      repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px),
+      repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
+      linear-gradient(#e7e7e7, #1a1a1a);
     --accent-color: #000;
     --heart-color: red;
     --sparks-color: var(--heart-color);

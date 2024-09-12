@@ -13,19 +13,20 @@
   --word-spacing-desktop: 5px;
   --font-size-desktop: 14px;
   --line-height: 21px;
-  --margin-block-end-desktop: 54px;
+  --margin-block-end-desktop: 50px;
   --card-title-margin-top-bottom-desktop: 5px;
-  --btn-margin-block-end-desktop: 24px;
+  --btn-margin-block-end-desktop: 23px;
   --padding-inline-end-mobile: 43px;
   --margin-block-end-mobile: 48px;
   --card-gap-mobile: 50px;
   --bg-color: #fff;
-  --bg-gradient: repeating-linear-gradient(
-      to right,
-      #d3d3d3 0 2px,
-      rgb(211 211 211 / 0) 2px 4px
-    ),
-    repeating-linear-gradient(to bottom, #e7e7e7 0 2px, #1a1a1a 2px 4px);
+  --bg-gradient:
+    repeating-linear-gradient(
+    to right,
+    #d3d3d3 0 2px,
+    transparent 2px 4px),
+    repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
   --accent-color: #000;
   --heart-color: red;
   --sparks-color: var(--heart-color);
@@ -41,20 +42,21 @@
   --font-weight-regular: 465;
   --font-weight-bold: 785;
   --word-spacing: 0.5px;
+  --word-spacing-desktop: ;
   --font-size-desktop: 18px;
   --btn-margin-block-end-desktop: 25px;
   --margin-block-end-desktop: 50px;
-  --card-title-margin-top-bottom-desktop: 7px;
+  --card-title-margin-top-bottom-desktop: 5px;
   --padding-inline-end-mobile: 25px;
   --margin-block-end-mobile: 51px;
   --card-gap-mobile: 51px;
   --bg-color: #000;
-  --bg-gradient: repeating-linear-gradient(
-      to right,
-      #000 0 2px,
-      rgb(0 0 0 / 0) 2px 4px
-    ),
-    repeating-linear-gradient(to bottom, #000 0 2px, #004306 2px 4px),
+  --bg-gradient:     
+    repeating-linear-gradient(
+    to right,
+    #000 0 2px,
+    transparent 2px 4px),
+    repeating-linear-gradient(to bottom, transparent 0 2px, #000 2px 4px),
     linear-gradient(#007f0c, #004306);
   --accent-color: #00cc14;
   --heart-color: red;
@@ -72,22 +74,23 @@
     --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
     --font-weight-regular: 400;
     --word-spacing: 2px;
-    --word-spacing-desktop: 5px;
+    --word-spacing-desktop: 7px;
     --line-height: 21px;
     --font-size-desktop: 14px;
-    --margin-block-end-desktop: 54px;
+    --margin-block-end-desktop: 50px;
     --card-title-margin-top-bottom-desktop: 5px;
-    --btn-margin-block-end-desktop: 24px;
+    --btn-margin-block-end-desktop: 23px;
     --padding-inline-end-mobile: 43px;
     --margin-block-end-mobile: 48px;
     --card-gap-mobile: 50px;
     --bg-color: #fff;
-    --bg-gradient: repeating-linear-gradient(
-        to right,
-        #d3d3d3 0 2px,
-        rgb(211 211 211 / 0) 2px 4px
-      ),
-      repeating-linear-gradient(to bottom, #e7e7e7 0 2px, #1a1a1a 2px 4px);
+    --bg-gradient:
+      repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px),
+      repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
+      linear-gradient(#e7e7e7, #1a1a1a);
     --accent-color: #000;
     --heart-color: red;
     --sparks-color: var(--heart-color);
@@ -105,20 +108,21 @@
     --font-weight-regular: 465;
     --font-weight-bold: 785;
     --word-spacing: 0.5px;
+    --word-spacing-desktop: 0;
     --font-size-desktop: 18px;
     --margin-block-end-desktop: 50px;
-    --card-title-margin-top-bottom-desktop: 7px;
+    --card-title-margin-top-bottom-desktop: 5px;
     --btn-margin-block-end-desktop: 25px;
     --padding-inline-end-mobile: 25px;
     --margin-block-end-mobile: 51px;
     --card-gap-mobile: 51px;
     --bg-color: #000;
-    --bg-gradient: repeating-linear-gradient(
-        to right,
-        #000 0 2px,
-        rgb(0 0 0 / 0) 2px 4px
-      ),
-      repeating-linear-gradient(to bottom, #000 0 2px, #004306 2px 4px),
+    --bg-gradient:
+      repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      transparent 2px 4px),
+      repeating-linear-gradient(to bottom, transparent 0 2px, #000 2px 4px),
       linear-gradient(#007f0c, #004306);
     --accent-color: #00cc14;
     --heart-color: red;
