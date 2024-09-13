@@ -9,6 +9,7 @@
   --main-font: 'Inter', sans-serif;
   --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
   --font-weight-regular: 400;
+  --font-weight-bold: 700;
   --word-spacing: 2px;
   --word-spacing-desktop: 5px;
   --font-size-desktop: 14px;
@@ -73,6 +74,7 @@
     --main-font: 'Inter', sans-serif;
     --accent-font: 'Press Start 2P', 'fantasy', sans-serif;
     --font-weight-regular: 400;
+    --font-weight-bold: 700;
     --word-spacing: 2px;
     --word-spacing-desktop: 7px;
     --line-height: 21px;

@@ -33,7 +33,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   max-inline-size: 700px;
-  color: var(--accent-color); 
+  color: var(--accent-color);
   font-variation-settings: "wght" var(--font-weight-regular);
 }
 
@@ -401,7 +401,7 @@
 .save-button .floppy {
   inline-size: 28px;
   block-size: 28px;
-  fill: var(--floppy-color);  
+  fill: var(--floppy-color);
 }
 
 .dialog-content .floppy {
@@ -472,6 +472,12 @@
   flex-direction: column;
   gap: 8px;
   font-size: 14px;
+}
+
+.dialog-window::backdrop {
+
+  background: rgba(0, 0, 0, 0.75);
+
 }
 
 .dialog-window {
